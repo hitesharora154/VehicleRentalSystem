@@ -1,0 +1,11 @@
+C:\Users\M1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\bin\Debug\netcoreapp2.0\VehicleRental.deps.json
+C:\Users\M1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\bin\Debug\netcoreapp2.0\VehicleRental.runtimeconfig.json
+C:\Users\M1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\bin\Debug\netcoreapp2.0\VehicleRental.runtimeconfig.dev.json
+C:\Users\M1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\bin\Debug\netcoreapp2.0\VehicleRental.dll
+C:\Users\M1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\obj\Debug\netcoreapp2.0\VehicleRental.csproj.CoreCompileInputs.cache
+C:\Users\M1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\obj\Debug\netcoreapp2.0\VehicleRental.AssemblyInfoInputs.cache
+C:\Users\M1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\obj\Debug\netcoreapp2.0\VehicleRental.AssemblyInfo.cs
+C:\Users\M1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\bin\Debug\netcoreapp2.0\VehicleRental.pdb
+C:\Users\M1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\obj\Debug\netcoreapp2.0\VehicleRental.dll
+C:\Users\M1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\obj\Debug\netcoreapp2.0\VehicleRental.pdb
+C:\Users\M1041809\Documents\Visual Studio 2017\Projects\VehicleRental\VehicleRental\obj\Debug\netcoreapp2.0\VehicleRental.csprojResolveAssemblyReference.cache

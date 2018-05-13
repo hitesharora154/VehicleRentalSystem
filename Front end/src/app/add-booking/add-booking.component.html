@@ -1,0 +1,45 @@
+<div class="container">
+  <br>
+  <br>
+  <div class="row">
+    <div class="col"></div>
+    <form class="col">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" [matDatepickerFilter]="dateFilter" placeholder="Booking Date" [formControl]="datePickerForm"
+          readonly>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error *ngIf="datePickerForm.hasError('required')">
+          Booking date is required
+        </mat-error>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-select placeholder="Vehicle Type" [formControl]="vehicleTypeForm" (change)="typeSelected($event.value)">
+          <mat-option *ngFor="let type of vehicleTypes" [value]="type.id">
+            {{type.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-select placeholder="Vehicle Name" [formControl]="vehicleNameForm" (change)="nameSelected($event.value)">
+          <mat-option *ngFor="let vehicle of vehicleNames" [value]="vehicle.id">
+            {{vehicle.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-9">
+          <button mat-raised-button type="submit" color="primary" (click)="Book()" [disabled]="datePickerForm.hasError('required') ||
+          !typePicked || !namePicked ">Submit</button>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </form>
+    <div class="col"></div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<h2 class="text-center">Login</h2>
+<br>
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+<div class="row">
+  <div class="col 2"></div>
+  <form class="col 8">
+    <mat-form-field>
+      <input matInput placeholder="Email" [formControl]="emailForm">
+      <mat-error *ngIf="emailForm.hasError('pattern')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailForm.hasError('required')">
+        Email is
+        <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Password" type="password" [formControl]="passwordForm">
+      <mat-error *ngIf="passwordForm.hasError('required')">
+        Password is
+        <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <div class="row">
+      <div class="col"></div>
+      <button mat-raised-button type="submit" (click)="login()" color="primary" class="col" [disabled]="emailForm.hasError('required') || emailForm.hasError('pattern') ||
+                  passwordForm.hasError('required')">
+        <strong>Login</strong>
+      </button>
+      <div class="col"></div>
+    </div>
+  </form>
+  <div class="col 2"></div>
+</div>

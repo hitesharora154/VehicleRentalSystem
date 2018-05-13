@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <div class="row">
+    <div class="col 2">
+      <a class="navbar-brand" href="#">Vehicle Rental System</a>
+    </div>
+    <div class="col 8"></div>
+    <div class="col 2">
+      <button mat-raised-button color="primary" [matMenuTriggerFor]="appMenu">Login/Sign Up</button>
+      <mat-menu #appMenu="matMenu">
+        <button mat-menu-item (click)="login()">Login</button>
+        <button mat-menu-item (click)="register()">Sign Up</button>
+      </mat-menu>
+    </div>
+  </div>
+</mat-toolbar>
+<br><br>
+<div class="container">
+  <app-carousel></app-carousel>
+</div>

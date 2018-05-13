@@ -1,0 +1,24 @@
+<div class="container">
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="username" *ngIf="role == 'Admin'">
+      <mat-header-cell *matHeaderCellDef>Username</mat-header-cell>
+      <mat-cell *matCellDef="let booking">{{booking.user.name}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef>Vehicle Name</mat-header-cell>
+      <mat-cell *matCellDef="let booking">{{booking.vehicle.name}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="type">
+      <mat-header-cell *matHeaderCellDef>Vehicle Type</mat-header-cell>
+      <mat-cell *matCellDef="let booking">{{booking.vehicle.vehicleType.name}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="bookingDate">
+      <mat-header-cell *matHeaderCellDef>Booking Date</mat-header-cell>
+      <mat-cell *matCellDef="let booking">{{booking.bookingDate}} &nbsp;&nbsp;
+        <button class="btn btn-danger" (click)="confirmDialog(booking.id, booking.vehicle.name, booking.bookingDate)">Cancel</button>
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

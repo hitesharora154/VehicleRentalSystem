@@ -1,0 +1,9 @@
+c:\users\m1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\bin\Debug\netcoreapp1.1\VehicleRental.deps.json
+c:\users\m1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\bin\Debug\netcoreapp1.1\VehicleRental.runtimeconfig.json
+c:\users\m1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\bin\Debug\netcoreapp1.1\VehicleRental.runtimeconfig.dev.json
+c:\users\m1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\bin\Debug\netcoreapp1.1\VehicleRental.dll
+c:\users\m1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\bin\Debug\netcoreapp1.1\VehicleRental.pdb
+c:\users\m1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\obj\Debug\netcoreapp1.1\VehicleRental.csprojResolveAssemblyReference.cache
+c:\users\m1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\obj\Debug\netcoreapp1.1\VehicleRental.AssemblyInfo.cs
+c:\users\m1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\obj\Debug\netcoreapp1.1\VehicleRental.dll
+c:\users\m1041809\documents\visual studio 2017\Projects\VehicleRental\VehicleRental\obj\Debug\netcoreapp1.1\VehicleRental.pdb

@@ -1,0 +1,46 @@
+<form>
+  <mat-form-field>
+    <input matInput placeholder="Name" [formControl]="nameForm">
+    <mat-error *ngIf="nameForm.hasError('required')">
+      Name is
+      <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput placeholder="Email" [formControl]="emailForm">
+    <mat-error *ngIf="emailForm.hasError('required')">
+      Email is
+      <strong>required</strong>
+    </mat-error>
+    <mat-error *ngIf="emailForm.hasError('pattern')">
+      Please enter a valid email address
+    </mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput placeholder="Password" type="password" [formControl]="passwordForm">
+    <mat-error *ngIf="passwordForm.hasError('required')">
+      Password is
+      <strong>required</strong>
+    </mat-error>
+    <mat-error *ngIf="passwordForm.hasError('pattern')">
+      Password must contain minimum one lowercase letter,uppercase letter, number and special character.
+    </mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput placeholder="Password" type="password" [formControl]="confirmPasswordForm">
+    <mat-error *ngIf="confirmPasswordForm.hasError('required')">
+      Confirm Password is
+      <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+  <br>
+
+  <button mat-raised-button type="submit" (click)="register()" color="primary" [disabled]="passwordForm.hasError('required') || emailForm.hasError('required')
+              || emailForm.hasError('pattern') || nameForm.hasError('required') ||
+              confirmPasswordForm.hasError('required') || passwordForm.hasError('pattern')">
+    <strong>Register</strong>
+  </button>
+</form>
