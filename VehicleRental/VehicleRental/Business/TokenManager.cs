@@ -97,7 +97,7 @@ namespace VehicleRental.Business
 
         private async Task<bool> IsAuthenticated(ApplicationUser user, string password)
         {
-            var response = await SignInManager.PasswordSignInAsync(user, password, true, false);
+            var response = await SignInManager.PasswordSignInAsync(user, password, isPersistent: true, lockoutOnFailure: false);
 
             return response.Succeeded;
         }

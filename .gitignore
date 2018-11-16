@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.ide-shm
+*.ide-wal
+*.cache
+*.props
+*.ide
+./Front end/node_modules
+./VehicleRental/VehicleRental/bin
+./VehicleRental/VehicleRental/obj
+./VehicleRental/.vs

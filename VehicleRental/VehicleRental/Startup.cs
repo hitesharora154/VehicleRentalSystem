@@ -112,6 +112,8 @@ namespace VehicleRental
                 });
             });
 
+            services.AddMemoryCache();
+
             RegisterDependecies(services);
         }
 

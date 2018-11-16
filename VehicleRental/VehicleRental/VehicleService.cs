@@ -24,6 +24,8 @@ namespace VehicleRental
             VehicleManager = vehicleManager;
         }
 
+        //[ResponseCache(VaryByHeader ="User-Agent", Duration = 60)]
+        [ETagFilter(200)]
         [HttpGet]
         public IActionResult GetAll(Guid vehicleTypeId)
         {

@@ -22,6 +22,7 @@ namespace VehicleRental
             VehicleTypeManager = vehicleTypeManager;
         }
 
+        [ETagFilter(200)]
         [HttpGet]
         public IActionResult GetAllTypes()
         {
